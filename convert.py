@@ -1,6 +1,6 @@
 import json
 
-song = "Synthesized Angel"
+song = ""
 
 need_moderate = False
 
