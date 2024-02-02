@@ -17,12 +17,6 @@ with open(f"./songs/{song}/chart.txt", "w", encoding="utf-8") as file:
         arrive_time = int(1000*beatsec*one_note["num"]/one_note["LPB"] + moderate)
         block = one_note["block"]
 
-        """
-        if len(one_note["notes"]) > 0:
-            arrive_back_time = int(1000*beatsec*one_note["notes"][0]["num"]/one_note["LPB"] + moderate) 
-            block = f"{block};{arrive_back_time}"
-        """
-
         if last == arrive_time:
             file.write(f",{block}")
         else:
